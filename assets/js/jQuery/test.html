@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+	  $("button").click(function(){
+		$("div").load('test.txt');
+		$("div").animate({fontSize:"3em"},"slow");
+		$("div").animate({left:"100px"},"slow",function(){
+			console.log("A");
+		});
+		/*$(window).animate({scrollTop: 0}, 1000);*/
+	  });
+	});
+ </script>
+ </head>
+ <body style="height: 2000px;">
+ 
+	<div style="position:absolute">
+	<button>Button</button>	
+	fsdfasfasdfasdf
+	</div>
+ </body>
+</html>
+   
+     
